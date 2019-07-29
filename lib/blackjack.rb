@@ -70,5 +70,6 @@ def runner
   if final_num >= 21
   end_game(final_num)
   end
+  puts "Your cards add up to #{final_num}"
 end
     
