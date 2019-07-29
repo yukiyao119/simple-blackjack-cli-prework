@@ -45,18 +45,20 @@ def hit?(cur_num)
   prompt_user
   input = get_user_input
   if input == 's'
-    continue
+    cur_num
   elsif input == 'h'
     new_card = deal_card
     cur_num += new_card
   else
     invalid_command
+    prompt_user
+    cur_num
   end 
 end
 
 def invalid_command
   # code invalid_command here
-  puts ""
+  puts "Please enter a valid command"
 end
 
 #####################################################
