@@ -69,5 +69,6 @@ def runner
   final_num = hit?(cur_num)
   if final_num >= 21
   end_game(final_num)
+  end
 end
     
