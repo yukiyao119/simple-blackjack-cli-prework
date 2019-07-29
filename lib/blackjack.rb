@@ -30,9 +30,6 @@ end
 
 def initial_round
   # code #initial_round here
-  # sum = 2.times do 
-  #   deal_card
-  # end 
   sum1 = deal_card
   sum2 = deal_card
   sum = sum1 + sum2
@@ -67,5 +64,10 @@ end
 
 def runner
   # code runner here
+  welcome
+  cur_num = initial_round
+  final_num = hit?(cur_num)
+  if final_num >= 21
+  end_game(final_num)
 end
     
